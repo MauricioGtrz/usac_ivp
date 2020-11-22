@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar } from "react-bootstrap";
+import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
 import { Button } from "react-bootstrap";
@@ -25,28 +25,25 @@ const header = () => {
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-        <Button size="lg" variant="outline-light" href="/">
-          Home
-        </Button>
-        <Button
-          size="lg"
-          variant="outline-light"
-          className="ml-3"
-          href="/about"
-        >
-          About
-        </Button>
-        <DropdownButton
-          size="lg"
-          variant="outline-light"
-          id="dropdown-basic-button"
-          title="Dropdown"
-          className="pl-3"
-        >
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </DropdownButton>
+        <Nav className="ml-auto">
+          <Nav.Link href="/" style={{ "font-size": "1.5em" }} className="pr-3">
+            Home
+          </Nav.Link>
+          <NavDropdown
+            title="About"
+            id="basic-nav-dropdown"
+            style={{ "font-size": "1.5em" }}
+            className="pr-2"
+          >
+            {" "}
+            <NavDropdown.Item href="/about">The Office</NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item href="/team">The Team</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="/contact" style={{ "font-size": "1.5em" }}>
+            Contact
+          </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
   );

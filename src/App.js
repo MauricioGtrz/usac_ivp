@@ -15,22 +15,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { apiResponse: "" };
-    }
-
-    callAPI() {
-        fetch("http://localhost:3001/About")
-            .then(res => res.text())
-            .then(res => this.setState({ apiResponse: res }))
-            .catch(err => err);
-    }
-
-    componentDidMount() {
-        this.callAPI();
-    }
-
     render() {
         return (
             <Router>
@@ -41,7 +25,6 @@ class App extends Component {
                     </Route>
                     <Route exact path="/about">
                         <About />
-                        <p className="App-intro">{this.state.apiResponse}</p>
                     </Route>
                     <Route exact path="/Events">
                         <Events />

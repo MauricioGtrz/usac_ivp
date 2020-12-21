@@ -5,7 +5,7 @@ import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 
-import logo from "../logo.png";
+import logo from "../images/logo.png";
 
 const header = () => {
   return (
@@ -36,13 +36,23 @@ const header = () => {
             className="pr-2"
           >
             {" "}
-            <NavDropdown.Item href="/about">The Office</NavDropdown.Item>
+            <NavDropdown.Item href="/About">The Office</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/team">The Team</NavDropdown.Item>
+            <NavDropdown.Item href="/Team">The Team</NavDropdown.Item>
           </NavDropdown>
-          <Nav.Link href="/contact" style={{ "font-size": "1.5em" }}>
+
+          <Nav.Link href="/Events" style={{ "font-size": "1.5em" }}>
+            Events
+          </Nav.Link>
+
+          <Nav.Link href="/News" style={{ "font-size": "1.5em" }}>
+            Latest News
+          </Nav.Link>
+
+          <Nav.Link href="/Contact" style={{ "font-size": "1.5em" }}>
             Contact
           </Nav.Link>
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -10,10 +10,11 @@ import {
   Col,
   Row,
 } from "react-bootstrap";
-import Facebook from "../facebook.png";
-import Reddit from "../reddit.png";
-import Instagram from "../instagram.png";
-import Logo from "../logo.png";
+
+import Facebook from "../images/facebook.png";
+import Reddit from "../images/reddit.png";
+import Instagram from "../images/instagram.png";
+import Logo from "../images/logo.png";
 
 const footer = () => {
   return (
@@ -33,13 +34,19 @@ const footer = () => {
             </Row>
             <Row>
               <Col>
-                <img src={Facebook} height="60" width="60" href=""></img>
+                <a href="https://www.facebook.com/USACIVP" target="_blank">
+                  <img src={Facebook} height="60" width="60" href=""></img>
+                </a>
               </Col>
               <Col>
-                <img src={Instagram} height="60" width="60" href=""></img>
+                <a href="https://www.instagram.com/usacivp/?hl=en" target="_blank">
+                  <img src={Instagram} height="60" width="60" href=""></img>
+                </a>
               </Col>
               <Col>
-                <img src={Reddit} height="60" width="60" href=""></img>
+                <a href="https://www.reddit.com/user/usac-ivp-office/" target="_blank">
+                  <img src={Reddit} height="60" width="60" href=""></img>
+                </a>
               </Col>
             </Row>
             <Row>

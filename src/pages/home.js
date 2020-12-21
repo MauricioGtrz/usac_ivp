@@ -3,7 +3,7 @@ import React from "react";
 import { Carousel, Col, Row } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 
-import ucla from "../ucla-royce-hall@-x.png";
+import ucla from "../images/ucla-royce-hall@-x.png";
 
 function App() {
   return (

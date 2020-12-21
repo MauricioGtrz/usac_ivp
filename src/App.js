@@ -12,7 +12,7 @@ import Footer from "./components/footer";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
     render() {

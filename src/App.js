@@ -12,30 +12,30 @@ import Footer from "./components/footer";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends Component {
     render() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename="/usac_ivp">
                 <Header />
                 <Switch>
-                    <Route exact path="/usac_ivp/#/">
+                    <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route exact path="/usac_ivp/#/about">
+                    <Route exact path="/about">
                         <About />
                     </Route>
-                    <Route exact path="/usac_ivp/#/Events">
+                    <Route exact path="/Events">
                         <Events />
                     </Route>
-                    <Route exact path="/usac_ivp/#/News">
+                    <Route exact path="/News">
                         <News />
                     </Route>
-                    <Route exact path="/usac_ivp/#/contact">
+                    <Route exact path="/contact">
                         <Contact />
                     </Route>
-                    <Route exact path="/usac_ivp/#/team">
+                    <Route exact path="/team">
                         <Team />
                     </Route>
                 </Switch>

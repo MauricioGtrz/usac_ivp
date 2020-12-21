@@ -20,22 +20,22 @@ class App extends Component {
             <Router basename={process.env.PUBLIC_URL}>
                 <Header />
                 <Switch>
-                    <Route basename={process.env.PUBLIC_URL} exact path="/">
+                    <Route exact path="/usac_ivp/#/">
                         <Home />
                     </Route>
-                    <Route exact path="/about">
+                    <Route exact path="/usac_ivp/#/about">
                         <About />
                     </Route>
-                    <Route exact path="/Events">
+                    <Route exact path="/usac_ivp/#/Events">
                         <Events />
                     </Route>
-                    <Route exact path="/News">
+                    <Route exact path="/usac_ivp/#/News">
                         <News />
                     </Route>
-                    <Route exact path="/contact">
+                    <Route exact path="/usac_ivp/#/contact">
                         <Contact />
                     </Route>
-                    <Route exact path="/team">
+                    <Route exact path="/usac_ivp/#/team">
                         <Team />
                     </Route>
                 </Switch>

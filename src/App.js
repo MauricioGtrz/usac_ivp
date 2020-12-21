@@ -17,7 +17,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
     render() {
         return (
-            <Router basename="/usac_ivp">
+            <Router basename={process.env.PUBLIC_URL}>
                 <Header />
                 <Switch>
                     <Route exact path="/">

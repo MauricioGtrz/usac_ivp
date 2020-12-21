@@ -17,7 +17,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
     render() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Header />
                 <Switch>
                     <Route exact path="/">

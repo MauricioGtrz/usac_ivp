@@ -10,7 +10,7 @@ import logo from "../images/logo.png";
 const header = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="sticky-top">
-      <Navbar.Brand href="/">
+      <Navbar.Brand href="/usac_ivp/#/">
         <img
           alt=""
           src={logo}
@@ -26,7 +26,7 @@ const header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto">
-          <Nav.Link href="/" style={{ "font-size": "1.5em" }} className="pr-3">
+          <Nav.Link href="/usac_ivp/#/" style={{ "font-size": "1.5em" }} className="pr-3">
             Home
           </Nav.Link>
           <NavDropdown
@@ -36,20 +36,20 @@ const header = () => {
             className="pr-2"
           >
             {" "}
-            <NavDropdown.Item href="/About">The Office</NavDropdown.Item>
+            <NavDropdown.Item href="/usac_ivp/#/About">The Office</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="/Team">The Team</NavDropdown.Item>
+            <NavDropdown.Item href="/usac_ivp/#/Team">The Team</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link href="/Events" style={{ "font-size": "1.5em" }}>
+          <Nav.Link href="/usac_ivp/#/Events" style={{ "font-size": "1.5em" }}>
             Events
           </Nav.Link>
 
-          <Nav.Link href="/News" style={{ "font-size": "1.5em" }}>
+          <Nav.Link href="/usac_ivp/#/News" style={{ "font-size": "1.5em" }}>
             Latest News
           </Nav.Link>
 
-          <Nav.Link href="/Contact" style={{ "font-size": "1.5em" }}>
+          <Nav.Link href="/usac_ivp/#/Contact" style={{ "font-size": "1.5em" }}>
             Contact
           </Nav.Link>
 

@@ -17,12 +17,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 class App extends Component {
     render() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <div>
                 <Header />
                 <Switch>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
+                    <Route exact path="/" component={Home}/>
                     <Route exact path="/about">
                         <About />
                     </Route>
@@ -40,7 +38,7 @@ class App extends Component {
                     </Route>
                 </Switch>
                 <Footer />
-            </Router>
+            </div>
         );
     }
 }

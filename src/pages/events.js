@@ -1,15 +1,28 @@
-import React from "react";
-import { Form, Col, Row, Container, Button } from "react-bootstrap";
+import React, { Component } from "react";
+import $ from "jquery";
 
-const events = () => {
+class events extends Component {
+  componentDidMount() {
+    console.log($(".name").val());
+  }
+  render() {
     return (
-        <div>
-            <h1> More to come!</h1>
-            <Container style={{ "margin-top": "5%", "margin-bottom": "5%" }}>
+      <div>
+        <h1> Instagram Feed </h1>
+        <input className="name" value="Mau" />
 
-            </Container>
-        </div>
+        {/* <form id="myFrorm" autoComplete="off">
+        <input
+          type="text"
+          id="username"
+          plpaceholder="Enter Username"
+          required
+        />
+        <input type="submit" value="Search" />
+      </form> */}
+      </div>
     );
-};
+  }
+}
 
 export default events;

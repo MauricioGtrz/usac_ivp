@@ -10,16 +10,6 @@ class events extends Component {
       <div>
         <h1> Instagram Feed </h1>
         <input className="name" value="Mau" />
-
-        {/* <form id="myFrorm" autoComplete="off">
-        <input
-          type="text"
-          id="username"
-          plpaceholder="Enter Username"
-          required
-        />
-        <input type="submit" value="Search" />
-      </form> */}
       </div>
     );
   }
